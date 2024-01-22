@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Rabindranath Jana</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="my-photo.jpg" alt="Profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm<span class="input">Fontend Develoer</span></h5>
+                    <h1>Rabindranath Jana</h1>
+                    <p>Hey, I'm Rabindranath Jana, a third-year Computer Science student with a passion for frontend web development. Proficient in HTML, CSS. I enjoy crafting engaging and user-friendly interfaces. Eager to contribute to real-world projects and always up for a coding challenge. Let's build something awesome together!</p>
+                    <div class="btn-group">
+                        <a href="Rabindranath's Resume.pdf" download class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/rj.rabindranath.7"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rabindranath-jana-59b0a92ab"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rabindranath280/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classlist.toggle("click");
+            nav,classlist.toggle("open");
+        })
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
